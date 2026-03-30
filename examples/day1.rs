@@ -1029,6 +1029,16 @@ fn main() {
     -137490,
     ];
 
+    let mut sum = 0;
+    //what allows each element to be added to the next
+    //x = items from the array
+    v.iter().for_each(|x| {
+        sum += x;
+        println!("{}", sum);
+    });
+
+    //iter = iterator? allows it to run a function (like adding everything together) when there are a lot of values to work through automatically...
+    //makes things ewasier/more lazy?
     let total:i32 = v.iter().sum();
-    println!("{total}");
+    println!("The total is {total}");
 }
